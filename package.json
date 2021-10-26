@@ -1,0 +1,42 @@
+{
+  "name": "ia7-cody909",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "server-compiled.js",
+  "scripts": {
+    "dev": "nodemon --exec node server.compiled.js",
+    "build": "babel server.js --out-file server.compiled.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.compiled.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wsu-cpts489-fa21/ia7-cody909.git"
+  },
+  "keywords": [
+    "node.js",
+    "express.js",
+    "react",
+    "heroku"
+  ],
+  "author": "cody mercadante",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wsu-cpts489-fa21/ia7-cody909/issues"
+  },
+  "presets": [
+    "@babel/preset/env"
+  ],
+  "homepage": "https://github.com/wsu-cpts489-fa21/ia7-cody909#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/node": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "nodemon": "^2.0.14"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
