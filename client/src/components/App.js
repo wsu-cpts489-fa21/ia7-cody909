@@ -11,6 +11,7 @@ import RoundsPage from './RoundsPage.js';
 import CoursesPage from './CoursesPage.js';
 import BuddiesPage from './BuddiesPage.js';
 import AppMode from './AppMode.js';
+import NotificationToast from './NotificationToast.js'
 
 library.add(faWindowClose,faEdit, faCalendar, 
             faSpinner, faSignInAlt, faBars, faSearch,
@@ -115,6 +116,16 @@ class App extends React.Component {
     });
   }
 
+  createNotification = (textColor, backgroundColor, message) => {
+    return (
+      <NotificationToast 
+        textColor={textColor}
+        backgroundColor={backgroundColor}
+        message={message}
+        />
+    )
+  }
+
   render() {
     return (
       <>
@@ -145,7 +156,9 @@ class App extends React.Component {
                         modalOpen={this.state.modalOpen}
                         toggleModalOpen={this.toggleModalOpen} 
                         menuOpen={this.state.menuOpen}
-                        userId={this.state.userId}/>,
+                        userId={this.state.userId}
+                        createNotification={this.createNotification}
+                        updateRound={this.updateRound}/>,
           CoursesMode:
             <CoursesPage modalOpen={this.state.modalOpen}
                         toggleModalOpen={this.toggleModalOpen} 

@@ -35,8 +35,10 @@ export default function PopUpModal(props) {
                   onClick={() => {
                     try {
                       value();
+                      setShow(false);
                     } catch (e) {
                       console.log(e);
+                      setShow(false);
                     }
                   }}
                 >
