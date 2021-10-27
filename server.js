@@ -1,5 +1,6 @@
 import path from 'path';
 import express from 'express';
+__dirname = process.cwd();
 
 const PORT = process.env.PORT || 8081;
 const app = express();
