@@ -1,5 +1,8 @@
-import path from 'path';
-import express from 'express';
+// import path from 'path';
+// import express from 'express';
+const path = require('path');
+
+const express = require('express');
 
 const __dirname = process.cwd();
 
