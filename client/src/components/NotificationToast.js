@@ -1,28 +1,39 @@
 import { Toast, ToastContainer, Button } from "react-bootstrap";
 import { useState } from "react";
 
+/*************************************************************************
+ * @function NotificationToast
+ * @desc
+ * Default exported function that returns renders html for the component.
+ * @prop backgroundColor - the background color for the body of the toast.
+ *       default value = gray
+ * @prop textColor - the color for the text in the body of the toast.
+ *       default value = white
+ * @prop message - the text in the body of the toast.
+ *       default value = "no message provided".
+ *************************************************************************/
 export default function NotificationToast(props) {
   const [show, setShow] = useState(true);
   const toggleShow = () => setShow(!show);
 
-  // optional props
-  const textColor = props.textColor || "white";
-  const backgroundColor = props.backgroundColor || "gray";
-
   return (
     <div>
-      <Toast show={show} onClose={toggleShow} textColor={textColor}>
-        <Toast.Header>
+      <ToastContainer position="top-start" style={{backgroundColor: "white", width: "24%", zIndex: "201"}}>
+      <Toast position="middle-start" className="notification"show={show} onClose={toggleShow}>
+        <Toast.Header className="notification">
           <img src="holder.js/20x20?text=%20" className="rounded me-2" alt="" />
-          <strong className="me-auto">Bootstrap</strong>
-          <small>11 mins ago</small>
+          <strong className="me-auto">New Notification</strong>
         </Toast.Header>
         <Toast.Body
-          style={{ backgroundColor: backgroundColor, color: textColor }}
+          style={{
+            backgroundColor: props.backgroundColor || "gray",
+            color: props.textColor || "white",
+          }}
         >
-          Woohoo, you're reading this text in a Toast!
+          {props.message || "no message provided"}
         </Toast.Body>
-      </Toast>
+        </Toast>
+        </ToastContainer>
     </div>
   );
 }

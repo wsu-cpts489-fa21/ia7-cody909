@@ -23,7 +23,6 @@ class RoundsPage extends React.Component {
         this.setState({deleteId: val},
         () => alert("Confirm delete goes here!"));
     }
-
     render() {
         switch (this.state.mode) {
         case RoundsMode.ROUNDSTABLE: 
@@ -37,7 +36,9 @@ class RoundsPage extends React.Component {
                                 updateRound= {this.props.updateRound}
                                 setMode={this.setMode} 
                                 toggleModalOpen={this.props.toggleModalOpen}
-                                menuOpen={this.props.menuOpen} /> 
+                                menuOpen={this.props.menuOpen} 
+                                createNotification={this.props.createNotification}
+                                /> 
                     <FloatingButton
                         icon="calendar"
                         label={"Log Round"}
