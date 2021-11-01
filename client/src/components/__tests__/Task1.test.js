@@ -31,4 +31,4 @@ it('is dismissed when the x icon is clicked', async () => {
     const {getByTestId, getByRole} = render(<NotificationToast />)
     const notification = getByTestId('notification')
     //couldn't figure out how to click the dismiss button
-})
+}) 

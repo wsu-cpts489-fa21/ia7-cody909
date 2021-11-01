@@ -91,6 +91,7 @@ export default function RoundsTable(props) {
       role="tabpanel"
       aria-label="Rounds Tab"
       tabIndex="0"
+      data-testid="roundsTable"
     >
       <h1 className="mode-page-header">Rounds</h1>
       <table id="roundsTable" className="table table-hover caption-top">
@@ -165,6 +166,7 @@ export default function RoundsTable(props) {
         </tbody>
       </table>
       <Button
+      data-testid="simulateDeleteButton"
         onClick={() => {
           setDeleteConfirmed(false)
           setDeleteClicked(true);
