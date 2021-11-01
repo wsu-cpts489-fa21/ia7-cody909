@@ -22,9 +22,9 @@ export default function PopUpModal(props) {
 
   return (
     <>
-      <Modal show={show} onHide={handleClose}>
+      <Modal data-testid="modal" show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>{props.text || "no text provided"}</Modal.Title>
+          <Modal.Title data-testid="modalTitle">{props.text || "no text provided"}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           {props.choices &&
@@ -32,6 +32,7 @@ export default function PopUpModal(props) {
               <>
                 <Button
                   className="mb-3"
+                  data-testid={key}
                   onClick={() => {
                     try {
                       value();

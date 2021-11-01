@@ -19,12 +19,13 @@ export default function NotificationToast(props) {
   return (
     <div>
       <ToastContainer position="top-start" style={{backgroundColor: "white", width: "24%", zIndex: "201"}}>
-      <Toast position="middle-start" className="notification"show={show} onClose={toggleShow}>
+      <Toast data-testid="notification" position="middle-start" className="notification"show={show} onClose={toggleShow}>
         <Toast.Header className="notification">
           <img src="holder.js/20x20?text=%20" className="rounded me-2" alt="" />
           <strong className="me-auto">New Notification</strong>
         </Toast.Header>
         <Toast.Body
+          data-testid ="notificationBody"
           style={{
             backgroundColor: props.backgroundColor || "gray",
             color: props.textColor || "white",
