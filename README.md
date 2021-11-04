@@ -18,7 +18,7 @@ Here are links to the issues associated with the tasks that I completed in this 
 
 
 ## Reflections
-One thing I struggled on with this assignment was the delete functionality but I was able to work through it by looking at how the rows were created and adapting that logic in order to delete a weather station. Another thing I struggled with was the refresh button, particularly because when I hit the refresh button and it was toggled to imperial units it would switch back to metric units because that is the default when you fetch data. And I couldn't set the new state and then toggle units because set state does not happen immediately. So I solved this problem by performing the calculation within setting the observations state if the current state of units was imperial.
+This assignment was fairy straightforward, I think the hardest part of the assignment was figuring out the logic for the popup modal do be able to pass in a dynamic amount of names and functions and associate them with buttons. I also had to use try catch blocks in the logic in a case something was passed in that was not a function. Another problem I ran into that I was not able to resolve was that the functionality to add a round through the form was not implemented in the starter code and it caused errors when I tried copying and pasting from a later chapter. So rather than spending too much time on it, I just made a button that simulates the dialog if a round's delete button was clicked.
 
 ## Notes
 The add and delete round functionality were not implemented in the class starter code. So I just added a button that brings up the confirm delete prompt as if the delete button was pressed on a round.
