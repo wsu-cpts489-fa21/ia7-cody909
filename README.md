@@ -16,7 +16,7 @@ Here are links to the issues associated with the tasks that I completed in this 
 |1 | [Issue #1](https://github.com/wsu-cpts489-fa21/ia7-cody909/issues/1) |
 |2 | [Issue #2](https://github.com/wsu-cpts489-fa21/ia7-cody909/issues/2) |
 |3 | [Issue #3](https://github.com/wsu-cpts489-fa21/ia7-cody909/issues/3) |
-|4 | [Issue #4](https://github.com/wsu-cpts489-fa21/ia7-cody909/issues/4) |
+|4 | [Issue #4](https://github.com/wsu-cpts489-fa21/ia7-cody909/issues/7) |
 
 
 
